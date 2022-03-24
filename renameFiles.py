@@ -13,7 +13,7 @@ def main():
         os.rename("images/fulls/" + filename, "images/fulls/" + x)
         
     for filename in os.listdir("images/thumbs"):
-        x = filename.replace(' ', '').replace("Medium", "").replace("Large","")
+        x = filename.replace(' ', '').replace("Medium", "").replace("Large","").replace("jpeg", "jpg")
         print(x)
         os.rename("images/thumbs/" + filename,"images/thumbs/" + x)
 
