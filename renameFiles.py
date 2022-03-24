@@ -8,7 +8,7 @@ def main():
     print(os.getcwd())
 
     for filename in os.listdir("images/fulls"):
-        x = filename.replace(' ', '').replace("Medium", "").replace("Large","")
+        x = filename.replace(' ', '').replace("Medium", "").replace("Large","").replace("jpeg", "jpg")
         print(x)
         os.rename("images/fulls/" + filename, "images/fulls/" + x)
         
